@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #000000;
   font-family: 'webfont', Arial, sans-serif;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .product-card {
-  background-color: #aaaaaa;
+  background-color: #1db75fe9;
   padding: 20px;
   margin: 20px;
   flex-basis: calc(33.333% - 40px); /* Adjust the width of the cards */
