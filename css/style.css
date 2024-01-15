@@ -31,7 +31,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
-  justify-content: space-between; /* Distribute space around items */
+  justify-content: space-around; /* Distribute space around items */
   align-items: center; /* Center align the items */
 }
 
@@ -41,9 +41,9 @@ body {
 }
 
 .product-card img {
-  max-width: 80%; /* Image width to fill the middle of the card */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space between image and button */
+  max-width: 100%; /* Image width to fill the middle of the card */
+  max-height: 50vh; /* Image height to be 50% of the viewport height */
+  margin: 20px 0; /* Space above and below the image */
 }
 
 .buy-button {
@@ -68,6 +68,7 @@ body {
 @media (max-width: 768px) {
   .header {
     width: 95%; /* Full width on small screens */
+    margin-bottom: 20px; /* More space between header and cards */
   }
 
   .products {
@@ -75,6 +76,10 @@ body {
   }
 
   .product-card {
-    flex-basis: 100%; /* Full width cards on small screens */
+    flex-basis: 80%; /* Each card takes more space on smaller screens */
+  }
+
+  .product-card img {
+    max-height: 40vh; /* Smaller height for the images on smaller screens */
   }
 }
