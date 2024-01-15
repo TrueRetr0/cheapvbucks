@@ -18,27 +18,32 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* Wrap the items for smaller screens */
+  margin: 0 auto;
+  max-width: 1200px; /* Max width for the product container */
 }
 
 .product-card {
   background-color: #aaaaaa;
-  padding: 40px; /* Increased padding */
-  margin: 20px; /* Space between cards */
-  flex-basis: calc(100% / 3 - 40px); /* Adjust the width of the cards */
+  padding: 20px;
+  margin: 20px;
+  flex-basis: calc(33.333% - 40px); /* Adjust the width of the cards */
   text-align: center;
   border-radius: 10px;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   justify-content: space-between; /* Distribute space around items */
+  align-items: center; /* Center align the items */
 }
 
 .product-card h3 {
   color: #333;
+  margin-bottom: 20px; /* Space below the title */
 }
 
 .product-card img {
-  max-width: 100%; /* Ensure the image is not larger than the card */
+  max-width: 80%; /* Image width to fill the middle of the card */
   height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and button */
 }
 
 .buy-button {
@@ -49,29 +54,27 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%; /* Button width to fill the card */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .product-card {
-    flex-basis: calc(100% / 2 - 40px); /* Two items per row on smaller screens */
-    margin-bottom: 20px;
+    flex-basis: calc(50% - 40px); /* Two items per row on smaller screens */
   }
 }
 
 @media (max-width: 768px) {
   .header {
     width: 95%; /* Full width on small screens */
-    margin-bottom: 20px; /* More space between header and cards */
   }
 
   .products {
     flex-direction: column; /* Stack items on smallest screens */
-    align-items: center; /* Center align the stacked items */
   }
 
   .product-card {
-    flex-basis: 90%; /* Almost full width for each card */
-    margin-bottom: 20px; /* Space between stacked cards */
+    flex-basis: 100%; /* Full width cards on small screens */
   }
 }
