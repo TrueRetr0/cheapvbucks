@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Ensure mod_rewrite is enabled and working
+RewriteCond %{HTTP_HOST} ^altsnf4lkzvbucks\.com$ [NC]
+
+# Rewrite for fortniteorder
+RewriteRule ^fortniteorder$ /html/fortnite_order.html [L,NC,QSA]
+
+# Rewrite for nitroorder
+RewriteRule ^nitroorder$ /html/nitro_order.html [L,NC,QSA]
