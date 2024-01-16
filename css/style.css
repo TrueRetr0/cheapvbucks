@@ -1,15 +1,29 @@
 @font-face {
-    font-family: 'webfont'; /* Replace with your font's name */
-    src: url('../fonts/webfont.otf') format('opentype'); /* Update with the correct path */
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'webfont'; /* Replace with your font's name */
+  src: url('../fonts/webfont.otf') format('opentype'); /* Update with the correct path */
+  font-weight: normal;
+  font-style: normal;
+}
 
-body {
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000000;
   font-family: 'webfont', Arial, sans-serif;
+}
+
+#bg-video {
+  position: fixed; /* Fixed position to cover the whole screen */
+  top: 0;
+  left: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Place the video under the content */
+}
+
+.content {
+  position: relative; /* Position your content over the video */
+  z-index: 1; /* Higher index to keep the content above the video background */
 }
 
 .header {
