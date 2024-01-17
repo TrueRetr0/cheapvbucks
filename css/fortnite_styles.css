@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'webfont'; /* Replace with your font's name */
+  src: url('../fonts/webfont.otf') format('opentype'); /* Update with the correct path */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   background: #f5f5f5;
+  font-family: 'webfont', Arial, sans-serif;
 }
 
 .order-container {
@@ -18,7 +26,7 @@ body {
 }
 
 .product-image {
-  background: url('path-to-your-product-image.jpg') no-repeat center center;
+  background: url('../img/fortnite_order.svg') no-repeat center center;
   background-size: cover;
   width: 200px; /* Adjust as needed */
   height: 200px; /* Adjust as needed */
