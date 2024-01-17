@@ -13,7 +13,8 @@ body, html {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  background: #f5f5f5;
+  background: #f80707;
+  font-family: 'webfont', Arial, sans-serif;
 }
 
 #bg-video {
