@@ -13,7 +13,7 @@ body, html {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  background: #f80707;
+  background: #f8070700;
   font-family: 'webfont', Arial, sans-serif;
 }
 
