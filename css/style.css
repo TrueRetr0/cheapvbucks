@@ -6,22 +6,24 @@
 }
 
 body, html {
-  height: auto; /* Adjust to auto to allow for scrolling */
-  min-height: 100%; /* Ensure it is at least the full viewport height */
   margin: 0;
   padding: 0;
+  height: 100%; /* Full height */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   font-family: 'webfont', Arial, sans-serif;
 }
 
 #bg-video {
   position: fixed; /* Fixed position */
-  top: 0;
-  left: 0;
-  min-width: 300%; /* Increase to 300% of the viewport */
-  min-height: 300%; /* Increase to 300% of the viewport */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center video exactly in the middle */
+  min-width: 100vw; /* Minimum of 100% of viewport width */
+  min-height: 100vh; /* Minimum of 100% of viewport height */
+  width: auto;
+  height: auto;
   z-index: -1; /* Behind all content */
+  object-fit: cover; /* Ensure video covers the whole area */
 }
 
 .content {
