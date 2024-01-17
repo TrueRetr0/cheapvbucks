@@ -6,10 +6,10 @@
 }
 
 body, html {
-  height: 100%; /* Full height */
+  height: auto; /* Adjust to auto to allow for scrolling */
+  min-height: 100%; /* Ensure it is at least the full viewport height */
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Hide scrollbars */
   font-family: 'webfont', Arial, sans-serif;
 }
 
@@ -17,10 +17,11 @@ body, html {
   position: fixed; /* Fixed position */
   top: 0;
   left: 0;
-  width: 100vw; /* Set width to viewport width */
-  height: 100vh; /* Set height to viewport height */
+  min-width: 300%; /* Increase to 300% of the viewport */
+  min-height: 300%; /* Increase to 300% of the viewport */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
   z-index: -1; /* Behind all content */
-  object-fit: cover; /* Cover the entire viewport without stretching */
 }
 
 .content {
