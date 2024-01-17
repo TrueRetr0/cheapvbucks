@@ -10,7 +10,10 @@ body, html {
   padding: 0;
   height: 100%; /* Full height */
   overflow: hidden; /* Hide scrollbars */
-  font-family: 'webfont', Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background: #f5f5f5;
 }
 
 #bg-video {
@@ -29,29 +32,28 @@ body, html {
 .order-container {
   position: relative; /* Above the video background */
   display: flex;
+  flex-direction: column; /* Stack children vertically */
   align-items: center;
   justify-content: center;
   background: rgba(75, 173, 222, 0.8); /* Slightly transparent white */
-  padding: 40px; /* Increased padding */
+  padding: 40px;
   border-radius: 20px; /* Rounded corners */
-  width: 60%; /* Larger width */
-  max-width: 800px; /* Maximum width */
-  margin: auto; /* Center in the viewport */
-  z-index: 2; /* Above the video background */
+  width: 70%; /* Increased width */
+  max-width: 1000px; /* Maximum width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  z-index: 2; /* Above the video background */
 }
 
 .product-image {
   background: url('../img/fortnite_order.svg') no-repeat center center;
   background-size: cover;
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  margin-right: 20px;
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  margin-bottom: 20px; /* Add space below the image */
 }
 
 .order-details {
-  display: flex;
-  flex-direction: column;
+  text-align: center; /* Center text and elements */
 }
 
 .order-details h2 {
