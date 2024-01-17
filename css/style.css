@@ -18,7 +18,9 @@ body, html {
   left: 0;
   min-width: 100%; 
   min-height: 100%;
-  z-index: -1; /* Place the video under the content */
+  z-index: -1000; /* Place the video under the content */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover; /* Ensure the video covers the screen */
 }
 
 .content {
