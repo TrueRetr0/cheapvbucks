@@ -49,7 +49,7 @@ body, html {
 }
 
 .product-card {
-  background-color: #1db75fe9;
+  background-color: #1db760;
   padding: 20px;
   margin: 20px;
   flex-basis: calc(33.333% - 40px); /* Adjust the width of the cards */
