@@ -17,12 +17,10 @@ body, html {
   position: fixed; /* Fixed position */
   top: 0;
   left: 0;
-  min-width: 100%; /* Minimum width to fill the viewport width */
-  min-height: 100%; /* Minimum height to fill the viewport height */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
+  width: 100vw; /* Set width to viewport width */
+  height: 100vh; /* Set height to viewport height */
   z-index: -1; /* Behind all content */
-  object-fit: cover; /* Cover the entire viewport */
+  object-fit: cover; /* Cover the entire viewport without stretching */
 }
 
 .content {
