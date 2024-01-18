@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var selectedIndex = quantitySelect.selectedIndex;
     var selectedPrice = prices[selectedIndex];
     var paypalLink = `https://paypal.me/kiaaniyer/${selectedPrice}`;
-    window.location.href = paypalLink;
+    window.open(paypalLink, '_blank');
   });
 });
